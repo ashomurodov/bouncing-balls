@@ -7,7 +7,7 @@ function randomColor() {
   return color;
 }
 
-function createBox(...[topR, leftR, topNumber1, leftNumber1]) {
+function createBox([topR, leftR, topNumber1, leftNumber1]) {
   let counter = 0;
   let div = document.createElement("div");
   let _randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -49,10 +49,10 @@ function createBox(...[topR, leftR, topNumber1, leftNumber1]) {
   }, 15);
 }
 
-const newElement = createBox(400, 20, -3, 2);
-const newElement1 = createBox(400, 643, -4, -1);
-const newElement2 = createBox(50, 242, -3, -2);
-const newElement3 = createBox(0, 900, 3, -3);
-const newElement4 = createBox(300, 143, 4, -2);
+const newElement = createBox([400, 20, -3, 2]);
+const newElement1 = createBox([400, 643, -4, -1]);
+const newElement2 = createBox([50, 242, -3, -2]);
+const newElement3 = createBox([0, 900, 3, -3]);
+const newElement4 = createBox([300, 143, 4, -2]);
 
 // console.log(window.innerWidth, window.innerHeight);
