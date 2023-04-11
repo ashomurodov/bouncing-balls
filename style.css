@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap");
 
+
+
 body {
   background-color: black;
   margin: 0;
@@ -16,6 +18,7 @@ h1 {
   margin: 0;
   padding: 0;
   line-height: 0%;
+  font-size: clamp(1.2rem, 12vw, 2.6rem)
 }
 
 .box {
