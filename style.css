@@ -2,17 +2,32 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: relative;
 }
 
-.dvd-container {
+/* .dvd-container {
   width: 300px;
   height: 135.5px;
-  position: relative;
+  position: absolute;
   left: 0px;
-  top: 0px; 
+  top: 0px;
+  z-index: 0;
+  background-color: bisque;
 }
- 
+
+.second {
+  z-index: 3;
+  background-color: blueviolet;
+} */
+
+.box {
+  width: 300px;
+  height: 135.5px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
 /* height: 135.5px */
 /* width: 300px */
 
@@ -23,5 +38,3 @@ body {
 /* if top == window.innerHeight - 135.5px -> this logo hit bottom corner */
 
 /* if left == window.innerWidth - 300px -> this logo hit right corner */
-
-
