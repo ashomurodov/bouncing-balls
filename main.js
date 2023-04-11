@@ -6,13 +6,12 @@ let topE = 0;
 let topNumber = 2;
 let leftNumber = 3;
 let counter = 0;
-console.log(window.innerHeight - 135.5);
 setInterval(() => {
   leftE += leftNumber;
   topE += topNumber;
   dvd.style.left = `${leftE}px`;
   dvd.style.top = `${topE}px`;
-  if (topE >= window.innerHeight - 136) {
+  if (topE >= window.innerHeight - 137) {
     console.log("pastga urildi");
     topNumber = -2;
     counter++;
