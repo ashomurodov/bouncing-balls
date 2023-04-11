@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap");
+
 body {
   background-color: black;
   margin: 0;
   padding: 0;
   position: relative;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Alkatra", cursive;
+}
+
+h1 {
+  box-shadow: -1px -2px 170px 24px #ef4375;
+  margin: 0;
+  padding: 0;
+  line-height: 0%;
 }
 
 .box {
@@ -17,7 +30,8 @@ body {
   align-items: center;
   font-size: 35px;
   cursor: pointer;
-  transition: color, scale .3s ease;
+  transition: color, scale 0.3s ease;
+  user-select: none;
 }
 
 .box:hover {
