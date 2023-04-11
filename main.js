@@ -11,7 +11,7 @@ function createBox(...[topR, leftR, topNumber1, leftNumber1]) {
 
   let div = document.createElement("div");
   let _randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  div.style.backgroundColor = `#${randomColor}`;
+  div.style.backgroundColor = `#${_randomColor}`;
   div.classList.add("box");
   document.body.appendChild(div);
   return setInterval(() => {
@@ -38,7 +38,7 @@ function createBox(...[topR, leftR, topNumber1, leftNumber1]) {
       div.style.backgroundColor = `#${_randomColor}`;
     }
   }, 15);
-  
+
 }
 
 const newElement = createBox(400, 20, -3, 2);
