@@ -13,22 +13,22 @@ setInterval(() => {
   dvd.style.left = `${leftE}px`;
   dvd.style.top = `${topE}px`;
   if (topE >= window.innerHeight - 136) {
-    console.log("pastga urilding nomard");
+    console.log("pastga urildi");
     topNumber = -2;
     counter++;
     img.src = `dvdlogo-0${counter}.svg`;
   } else if (leftE >= window.innerWidth - 300) {
-    console.log("chapga urilding nomard");
+    console.log("chapga urild");
     leftNumber = -3;
     counter++;
     img.src = `dvdlogo-0${counter}.svg`;
   } else if (topE <= 0) {
-    console.log("tepaga urilding nomard");
+    console.log("tepaga urildi");
     topNumber = 2;
     counter++;
     img.src = `dvdlogo-0${counter}.svg`;
   } else if (leftE <= 0) {
-    console.log("chapga urilding nomard");
+    console.log("chapga urildi");
     leftNumber = 3;
     counter++;
     img.src = `dvdlogo-0${counter}.svg`;
