@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap");
 
 body {
-  background-color: black;
   margin: 0;
   padding: 0;
   position: relative;
@@ -11,12 +10,11 @@ body {
   font-family: "Alkatra", cursive;
 }
 
-.h1box{
+.h1box {
   display: flex;
   flex-direction: column;
   gap: 47px;
   text-align: center;
-
 }
 
 h1 {

@@ -3,8 +3,7 @@ const img = document.querySelectorAll(".img");
 document.body.style.backgroundColor = `black`;
 
 function randomColor() {
-  let color = Math.floor(Math.random() * 16777215).toString(16);
-  return color;
+  return Math.floor(Math.random() * 16777215).toString(16);
 }
 
 function handleClick(element) {
@@ -14,9 +13,8 @@ function handleClick(element) {
 function createBox([topR, leftR, topNumber1, leftNumber1]) {
   let counter = 0;
   let div = document.createElement("div");
-  let _randomColor = randomColor();
 
-  div.style.backgroundColor = `#${_randomColor}`;
+  div.style.backgroundColor = `#${randomColor()}`;
   div.classList.add("box");
   div.innerText = counter;
   div.addEventListener("click", () => handleClick(div));
@@ -31,9 +29,8 @@ function createBox([topR, leftR, topNumber1, leftNumber1]) {
 
     const makeShorter = (arg) => {
       arg == "top" ? (topNumber1 = topNumber1 * -1) : (leftNumber1 = leftNumber1 * -1);
-      _randomColor = randomColor();
-      div.style.backgroundColor = `#${_randomColor}`;
-      div.style.boxShadow = `-1px -2px 170px 24px #${_randomColor}75`;
+      div.style.backgroundColor = `#${randomColor()}`;
+      div.style.boxShadow = `-1px -2px 170px 24px #${randomColor()}75`;
       counter++;
       div.innerText = counter;
     };
@@ -42,7 +39,7 @@ function createBox([topR, leftR, topNumber1, leftNumber1]) {
       // <---> by top and bottom
       makeShorter("top");
     } else if (leftR >= window.innerWidth - 120 || leftR <= 0) {
-      // <---> by left and right 
+      // <---> by left and right
       makeShorter("left");
     }
   }, 15);
